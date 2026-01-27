@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dqmjrkaaa | ESign</title>
+    <style>
+        :root {
+            --bg-color: #f2f2f7;
+            --card-bg: #ffffff;
+            --text-main: #000000;
+            --text-sub: #8e8e93;
+            --blue-btn: #007aff;
+            --border-color: #e5e5ea;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            gap: 6px;
+            animation: slideUp 0.5s ease;
+        }
+
+        .profile-header h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .badge { width: 22px; height: 22px; }
+
+        .section-block {
+            background: var(--card-bg);
+            border-radius: 16px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            animation: slideUp 0.6s ease backwards;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+
+        /* Стиль для DNS и Certificate */
+        .project {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project h3 { font-size: 17px; font-weight: 600; }
+        
+        /* Иконки скачивания */
+        .dl-icon { 
+            width: 32px; 
+            height: 32px;
+            transition: transform 0.2s, opacity 0.2s; 
+        }
+        
+        .project:active .dl-icon { 
+            transform: scale(0.9);
+            opacity: 0.6;
+        }
+
+        /* App Row */
+        .app-row {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s;
+        }
+
+        .app-row:active { background-color: #f2f2f7; }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 13px;
+            border: 0.5px solid var(--border-color);
+            margin-right: 15px;
+        }
+
+        .app-text { flex: 1; }
+        .app-title { font-size: 17px; font-weight: 600; }
+        .app-sub { font-size: 13px; color: var(--text-sub); }
+
+        .app-action {
+            background: #f0f0f7;
+            color: var(--blue-btn);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        /* Соцсети */
+        .social-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 5px;
+        }
+
+        .social-btn {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: slideUp 0.7s ease backwards;
+        }
+
+        .social-btn:active { transform: scale(0.9); }
+
+        .social-btn img {
+            width: 35px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+        }
+
+        .tg-btn:hover { box-shadow: 0 8px 20px rgba(0, 136, 204, 0.2); }
+        .tt-btn:hover { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-header">
+            <h1>dqmjrkaaa</h1>
+            <img src="https://khoindvn.io.vn/img/icons/badge.png" alt="Verified" class="badge">
+        </div>
+
+        <div class="section-block delay-1">
+            <a href="https://github.com/Nyasami/getUDID-JS/releases/download/1.0.0/signed_khoindvn_fullchain.mobileconfig" class="project">
+                <h3>Download DNS Profile</h3>
+                <img src="https://khoindvn.io.vn/img/icons/download.png" alt="Download" class="dl-icon">
+            </a>
+        </div>
+
+        <div class="section-block delay-2">
+            <a href="https://t.me/podval_dqmira/970" class="project" target="_blank">
+                <h3>Download Certificate</h3>
+                <img src="https://khoindvn.io.vn/img/icons/download.png" alt="Download" class="dl-icon">
+            </a>
+        </div>
+
+        <div class="section-block delay-3">
+            <a href="https://api.khoindvn.io.vn/Sco2A2" class="app-row" target="_blank">
+                <img src="https://khoindvn.io.vn/img/pf/profile-pic.png" class="app-icon" alt="ESign">
+                <div class="app-text">
+                    <div class="app-title">ESign</div>
+                    <div class="app-sub">VIETTEL GROUP</div>
+                </div>
+                <div class="app-action">INSTALL</div>
+            </a>
+        </div>
+
+        <div class="social-grid">
+            <a href="https://t.me/podval_dqmira" class="social-btn tg-btn delay-4" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/250px-Telegram_2019_Logo.svg.png" alt="TG">
+                Telegram
+            </a>
+            <a href="https://tiktok.com/@dqmir1111" class="social-btn tt-btn delay-4" target="_blank">
+                <img src="https://sf-static.tiktokcdn.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png" alt="TT">
+                TikTok
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Небольшой лог для проверки
+        console.log("ESign Page by @podval_dqmira updated.");
+    </script>
+
+</body>
+</html>
